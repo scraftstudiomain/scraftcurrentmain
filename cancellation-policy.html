@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Axtra HTML5 Template">
+
+  <title>Cancellation Policy | Scraft Studio</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://app.boei.help/embed/k/8ccd044b-175b-4586-a785-921f3dfe35c2" async></script>
+  <style>
+    .link_color {
+
+      &:active,
+      &:visited,
+      &:any-link,
+      &:enabled,
+      & {
+        color: var(--deep-pink);
+      }
+
+      &:hover {
+        color: var(--black);
+      }
+    }
+
+    .dark .blog__detail .link_color {
+
+      &:active,
+      &:visited,
+      &:any-link,
+      &:enabled,
+      & {
+        color: var(--primary);
+      }
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+  </style>
+</head>
+
+
+<body class="dark">
+  <script src="https://app.boei.help/embed/k/8ccd044b-175b-4586-a785-921f3dfe35c2" async></script>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Cursor</h2>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">mode</h2>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button data-mode="light">light</button>
+          <button class="active" data-mode="dark">dark</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Language Support</h2>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+
+
+  <!-- Scroll Smoother -->
+  <div class="has-smooth" id="has_smooth"></div>
+
+
+  <!-- Go Top Button -->
+  <button type="button" id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+  <!-- Header area start -->
+  <header class="header__area">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">
+          <img class="logo-primary" src="assets/imgs/logo/scraft-vertical-white.png" alt="Site Logo">
+          <img class="logo-secondary" src="assets/imgs/logo/logo-horizontal-min.png" alt="Mobile Logo">
+        </a>
+      </div>
+      <div class="header__nav-icon">
+        <button id="open_offcanvas"><img src="assets/imgs/icon/menu-white.png" alt="Menubar Icon"></button>
+      </div>
+      <!--<div class="header__support">-->
+      <!--  <p>Support center <a href="tel:+918698208442">+918698208442</a></p>-->
+      <!--</div>-->
+    </div>
+  </header>
+  <!-- Header area end -->
+
+  <!-- Offcanvas area start -->
+  <div class="offcanvas__area">
+    <div class="offcanvas__body">
+      <div class="offcanvas__left">
+        <div class="offcanvas__logo">
+          <a href="index.html"><img src="assets/imgs/logo/logo-horizontal.png" alt="Offcanvas Logo"></a>
+        </div>
+        <div class="offcanvas__social">
+          <h3 class="social-title">Follow Us</h3>
+          <ul>
+            <li><a href="https://www.behance.net/scraftstudio">Behance</a></li>
+            <li><a href="https://www.linkedin.com/company/scraftstudio/?originalSubdomain=in">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/scraftstudio">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas__links">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="career.html">Career</a></li>
+            <!--<li><a href="blog.html">blog</a></li>-->
+          </ul>
+        </div>
+      </div>
+      <!-- list  -->
+
+      <div class="offcanvas__mid">
+        <div class="offcanvas__menu-wrapper">
+          <nav class="offcanvas__menu">
+            <ul class="menu-anim">
+              <li><a href="index.html">home</a>
+              </li>
+              <li><a href="about.html">about</a></li>
+              <li>
+                <a href="service.html">Services</a>
+                <ul>
+                  <!-- <li><a href="service.html">service</a></li>
+                  <li><a href="service-dark.html">service dark</a></li>
+                  <li><a href="service-2.html">service V.2</a></li>
+                  <li><a href="service-2-dark.html">service V.2 dark</a></li>
+                  <li><a href="service-3.html">service V.3</a></li> -->
+                </ul>
+              </li>
+
+              <!--<li><a href="blog.html">Case Studies</a>-->
+              <!--  <ul>-->
+              <!--    <li><a href="blog.html">blog</a></li>-->
+              <!--    <li><a href="blog-dark.html">blog dark</a></li>-->
+              <!--    <li><a href="blog-2.html">blog v.2</a></li>-->
+              <!--    <li><a href="blog-2-dark.html">blog v.2 dark</a></li>-->
+              <!--  </ul>-->
+              <!--</li>-->
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- End List -->
+      <div class="offcanvas__right">
+        <div class="offcanvas__search">
+          <form action="#">
+            <input type="text" name="search" placeholder="Search keyword">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="offcanvas__contact">
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="tel:+918698208442">+(91) - 869 820 8442</a></li>
+            <li><a href="mailto:hello@scraft.studio">hello@scraft.studio</a></li>
+            <li>Sadbhav Complex, 1st floor, Drive In Rd, Ahmedabad, Gujarat 380059</li>
+          </ul>
+        </div>
+        <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1">
+        <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2">
+      </div>
+      <div class="offcanvas__close">
+        <button type="button" id="close_offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas area end -->
+
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+
+        <!-- Blog detail start -->
+        <section class="blog__detail">
+          <div class="container g-0 line pt-140">
+            <span class="line-3"></span>
+            <div class="row">
+              <div class="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
+                <div class="blog__detail-top">
+                  <h2 class="blog__detail-date animation__word_come">Scraft Policies <span>07 July 2024</span></h2>
+                  <h2 class="blog__detail-title animation__word_come">Cancellation Policy</h2>
+                  <div class="blog__detail-metalist">
+                    <div class="blog__detail-meta">
+                      <!-- <img src="assets/imgs/blog/detail/author.png" alt="Author Picture"> -->
+                      <p>Written by <strong>Scraft Studio</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-xxl-12">
+                <div class="blog__detail-thumb">
+                  <img src="assets/imgs/blog/detail/1.jpg" alt="Blog Thumbnail" data-speed="0.5">
+                </div>
+              </div> -->
+              <div class="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
+                <div class="blog__detail-content">
+                  <h3>Introduction</h3>
+                  <p>At Scraft, we understand that sometimes plans change. This cancellation policy outlines the terms
+                    and conditions regarding cancellations of our services.</p>
+                  <h3>Cancellation Notice</h3>
+                  <ul>
+                    <li>
+                      <p><b>Advance Notice: </b>We require that you notify us of cancellations at least 48
+                        hours in advance of the scheduled service</p>
+                    </li>
+                    <li>
+                      <p><b>How to Cancel:</b> To cancel a service, please contact us at <a
+                          href="mailto:scraftstudio@gmail.com" target="_blank" class="link_color">email</a> or <a
+                          class="link_color" href="tel:918698208442" target="_blank">call</a>.
+                      </p>
+                    </li>
+                  </ul>
+                  <h3>Cancellation Fees</h3>
+                  <ul>
+                    <li>
+                      <p><b>Within 48 Hours: </b>Cancellations made less than 48 hours before the scheduled service will
+                        incur a cancellation fee of 50% of the service cost.</p>
+                    </li>
+                    <li>
+                      <p><b>No-Show:</b> If you do not show up for the scheduled service without prior notification, you
+                        will be charged the full cost of the service.
+                      </p>
+                    </li>
+                  </ul>
+                  <h3>Refunds for Cancellations</h3>
+                  <ul>
+                    <li>
+                      <p><b>Eligible Refunds: </b>If you cancel a service more than 48 hours in advance, you will be
+                        eligible for a full refund.</p>
+                    </li>
+                    <li>
+                      <p><b>Process: </b>Refunds will be processed within 7 business days and will be credited to your
+                        original method of payment.</p>
+                    </li>
+                  </ul>
+                  <h3>Rescheduling</h3>
+                  <ul>
+                    <li>
+                      <p><b>Notice: </b>If you need to reschedule a service, please notify us at least 48 hours in
+                        advance.</p>
+                    </li>
+                    <li>
+                      <p><b>Process: </b>Rescheduling requests made less than 48 hours in advance may be subject to the
+                        same fees as cancellations.</p>
+                    </li>
+                  </ul>
+                  <h3>Exceptions</h3>
+                  <p>We understand that emergencies happen. If you have an emergency, please contact us as soon as
+                    possible to discuss your situation. We may waive the cancellation fee at our discretion.</p>
+                  <h2>Contact Information</h2>
+                  <p>For any questions regarding our Cancellation Policy, please contact us at:</p>
+                  <ul>
+                    <li>
+                      <p><b>Email: </b><a class="link_color" href="mailto:scraftstudio@gmail.com"
+                          target="_blank">scraftstudio@gmail.com</a></p>
+                    </li>
+                    <li>
+                      <p><b>Phone: </b><a class="link_color" href="tel:918698208442">+91 86982 08442</a></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- Blog detail end -->
+
+
+        <!-- Related blog start -->
+        <section class="blog__related blog__animation">
+          <div class="container g-0 line pt-130 pb-140">
+            <span class="line-3"></span>
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="sec-title-wrapper">
+                  <h2 class="sec-title title-anim">Scraft Policies</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row reset-grid">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <article class="blog__item">
+                  <!-- <div class="blog__img-wrapper">
+                    <a href="blog-details.html">
+                      <div class="img-box">
+                        <img class="image-box__item" src="assets/imgs/blog/1.jpg" alt="Blog Thumbnail">
+                        <img class="image-box__item" src="assets/imgs/blog/1.jpg" alt="BLog Thumbnail">
+                      </div>
+                    </a>
+                  </div> -->
+                  <h4 class="blog__meta sub-title-anim"><a href="terms&conditions.html">Scraft Policies</a> 27 July
+                    2024</h4>
+                  <h5><a href="terms&conditions.html" class="blog__title sub-title-anim">Terms & Condition</a></h5>
+                  <a href="terms&conditions.html" class="blog__btn">Read More <span><i
+                        class="fa-solid fa-arrow-right"></i></span></a>
+                </article>
+              </div>
+
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <article class="blog__item">
+                  <!-- <div class="blog__img-wrapper">
+                    <a href="blog-details.html">
+                      <div class="img-box">
+                        <img class="image-box__item" src="assets/imgs/blog/1.jpg" alt="Blog Thumbnail">
+                        <img class="image-box__item" src="assets/imgs/blog/1.jpg" alt="BLog Thumbnail">
+                      </div>
+                    </a>
+                  </div> -->
+                  <h4 class="blog__meta sub-title-anim"><a href="refund-policy.html">Scraft Policies</a> 27 July
+                    2024</h4>
+                  <h5><a href="refund-policy.html" class="blog__title sub-title-anim">Refund Policy</a></h5>
+                  <a href="refund-policy.html" class="blog__btn">Read More <span><i
+                        class="fa-solid fa-arrow-right"></i></span></a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Related blog end -->
+
+
+        <!-- CTA area start -->
+        <section class="cta__area">
+          <div class="container line pb-110">
+            <div class="line-3"></div>
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="cta__content">
+                  <p class="cta__sub-title">Work with us</p>
+                  <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
+                  <div class="btn_wrapper">
+                    <a href="contact.html" class="wc-btn-primary btn-item btn-hover"><span></span>Let’s talk us <i
+                        class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CTA area end -->
+
+      </main>
+
+
+
+      <!-- Footer area start -->
+      <footer class="footer__area">
+        <div class="footer__top">
+          <div class="container footer-line"></div>
+          <img src="assets/imgs/feedback/design .png" alt="Footer Image" data-speed="0.75">
+        </div>
+
+        <div class="footer__btm">
+          <div class="container">
+            <div class="row footer__row">
+              <div class="col-xxl-12">
+                <div class="footer__inner">
+                  <div class="footer__widget">
+                    <ul class="footer__social">
+                      <li><a href="https://www.facebook.com/scraftstudio"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                      <li><a href="https://www.behance.net/scraftstudio"><span><i class="fa-brands fa-square-behance"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/company/scraftstudio/?originalSubdomain=in"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                      <!--<li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>-->
+                    </ul>
+                  </div>
+
+                  <div class="footer__widget-2">
+                    <h2 class="footer__widget-title">Quick Links</h2>
+                    <ul class="footer__link">
+                      <li><a href="about.html">About</a></li>
+                      <!--<li><a href="portfolio.html">Case Study</a></li>-->
+                      <li><a href="career.html">Services</a></li>
+                      <!--<li><a href="blog.html"></a></li>-->
+                      <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+                      <li><a href="refund-policy.html">Refund Policy</a></li>
+                      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                      <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer__widget-3">
+                    <h2 class="footer__widget-title">Contact Us</h2>
+                    <ul class="footer__contact">
+                      <li>Sadbhav Complex, 1st floor, Drive In Rd, Ahmedabad, Gujarat 380059</li>
+                      <li><a href="tel:02574328301" class="phone">+(91)-869-8208-442 </a></li>
+                      <li><a href="mailto:hello@scraft.studio">hello@scraft.studio</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer__widget-4">
+                    <h2 class="project-title">Have a project in your mind?</h2>
+                    <div class="btn_wrapper">
+                      <a href="contact.html" class="wc-btn-primary btn-hover btn-item"><span></span> contact us <i
+                          class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                  </div>
+
+                  <div class="footer__copyright">
+                    <p>© 2024 Next Up Design | Scraft Studio<a href="https://scraft.studio/" target="_blank"></a>
+                    </p>
+                  </div>
+
+                  <div class="footer__subscribe">
+                    <form action="#">
+                      <input type="email" name="email" placeholder="Enter your email">
+                      <button type="submit" class="subs-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer area end -->
+
+    </div>
+  </div>
+
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/chroma.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/vanilla-tilt.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

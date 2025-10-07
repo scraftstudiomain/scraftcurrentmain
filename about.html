@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Axtra HTML5 Template">
+
+  <title>About - Scraft Studio</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- All CSS files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/progressbar.css">
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/squid-game-simple.css">
+  <link rel="stylesheet" href="assets/css/footer-fix.css">
+  <script src="https://app.boei.help/embed/k/8ccd044b-175b-4586-a785-921f3dfe35c2"  async></script>
+</head>
+
+
+<body>
+  <script src="https://app.boei.help/embed/k/8ccd044b-175b-4586-a785-921f3dfe35c2"  async></script>
+
+  <!-- Cursor Animation -->
+  <div class="cursor1"></div>
+  <div class="cursor2"></div>
+
+
+  <!-- Team Cursor -->
+  <div class="cursor" id="team_cursor">Drag</div>
+
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loading">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+      <div class="bar bar4"></div>
+      <div class="bar bar5"></div>
+      <div class="bar bar6"></div>
+      <div class="bar bar7"></div>
+      <div class="bar bar8"></div>
+    </div>
+  </div>
+
+
+  <!-- Switcher Area Start -->
+  <div class="switcher__area">
+    <div class="switcher__icon">
+      <button id="switcher_open"><i class="fa-solid fa-gear"></i></button>
+      <button id="switcher_close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="switcher__items">
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Cursor</h2>
+        </div>
+        <div class="switcher__btn">
+          <select name="cursor-style" id="cursor_style">
+            <option value="1">default</option>
+            <option selected value="2">animated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">mode</h2>
+        </div>
+        <div class="switcher__btn mode-type wc-col-2">
+          <button class="active" data-mode="light">light</button>
+          <button data-mode="dark">dark</button>
+        </div>
+      </div>
+
+      <div class="switcher__item">
+        <div class="switch__title-wrap">
+          <h2 class="switcher__title">Language Support</h2>
+        </div>
+        <div class="switcher__btn lang_dir wc-col-2">
+          <button class="active" data-mode="ltr">LTR</button>
+          <button data-mode="rtl">RTL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Switcher Area End -->
+
+
+  <!-- Scroll Smoother -->
+  <div class="has-smooth" id="has_smooth"></div>
+
+
+  <!-- Go Top Button -->
+  <button id="scroll_top" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+  <!-- Header area start -->
+  <header class="header__area">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">
+          <img class="logo-primary" src="assets/imgs/logo/scraft-vertical-white.png" alt="Site Logo">
+          <img class="logo-secondary" src="assets/imgs/logo/logo-horizontal-min.png" alt="Mobile Logo">
+        </a>
+      </div>
+      <div class="header__nav-icon">
+        <button id="open_offcanvas"><img src="assets/imgs/icon/menu-white.png" alt="Menubar Icon"></button>
+      </div>
+      <!--<div class="header__support">-->
+      <!--  <p>Support center <a href="tel:+918698208442">+918698208442</a></p>-->
+      <!--</div>-->
+    </div>
+  </header>
+  <!-- Header area end -->
+
+
+  <!-- Offcanvas area start -->
+  <div class="offcanvas__area">
+    <div class="offcanvas__body">
+      <div class="offcanvas__left">
+        <div class="offcanvas__logo">
+          <a href="index.html"><img src="assets/imgs/logo/logo-horizontal.png" alt="Offcanvas Logo"></a>
+        </div>
+        <div class="offcanvas__social">
+          <h3 class="social-title">Follow Us</h3>
+          <ul>
+            <li><a href="https://www.behance.net/scraftstudio">Behance</a></li>
+            <li><a href="https://www.linkedin.com/company/scraftstudio/?originalSubdomain=in">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/scraftstudio">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="offcanvas__links">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="career.html">Career</a></li>
+            <!--<li><a href="blog.html">blog</a></li>-->
+          </ul>
+        </div>
+      </div>
+      <!-- list  -->
+
+      <div class="offcanvas__mid">
+        <div class="offcanvas__menu-wrapper">
+          <nav class="offcanvas__menu">
+            <ul class="menu-anim">
+              <li><a href="index.html">home</a>
+              </li>
+              <li><a href="about.html">about</a></li>
+              <li>
+                <a href="service.html">Services</a>
+                <ul>
+                  <!-- <li><a href="service.html">service</a></li>
+                  <li><a href="service-dark.html">service dark</a></li>
+                  <li><a href="service-2.html">service V.2</a></li>
+                  <li><a href="service-2-dark.html">service V.2 dark</a></li>
+                  <li><a href="service-3.html">service V.3</a></li> -->
+                </ul>
+              </li>
+
+              <!--<li><a href="blog.html">Case Studies</a>-->
+              <!--  <ul>-->
+              <!--    <li><a href="blog.html">blog</a></li>-->
+              <!--    <li><a href="blog-dark.html">blog dark</a></li>-->
+              <!--    <li><a href="blog-2.html">blog v.2</a></li>-->
+              <!--    <li><a href="blog-2-dark.html">blog v.2 dark</a></li>-->
+              <!--  </ul>-->
+              <!--</li>-->
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- End List -->
+      <div class="offcanvas__right">
+        <div class="offcanvas__search">
+          <form action="#">
+            <input type="text" name="search" placeholder="Search keyword">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="offcanvas__contact">
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="tel:+918698208442">+(91) - 869 820 8442</a></li>
+            <li><a href="mailto:hello@scraft.studio">hello@scraft.studio</a></li>
+            <li>Sadbhav Complex, 1st floor, Drive In Rd, Ahmedabad, Gujarat 380059</li>
+          </ul>
+        </div>
+        <img src="assets/imgs/shape/11.png" alt="shape" class="shape-1">
+        <img src="assets/imgs/shape/12.png" alt="shape" class="shape-2">
+      </div>
+      <div class="offcanvas__close">
+        <button type="button" id="close_offcanvas"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </div>
+  <!-- Offcanvas area end -->
+
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+
+        <!-- Hero area start -->
+        <section class="hero__about">
+          <div class="container g-0 line">
+            <span class="line-3"></span>
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="hero__about-content">
+                  <h1 class="hero-title animation__word_come">Scraft Studio <br>Melds art and analytics for impactful
+                    digital branding and development. Join us for transformative online solutions</h1>
+                  <div class="hero__about-info">
+                    <div class="hero__about-btn">
+                      <div class="btn_wrapper">
+                        <a href="service.html" class="wc-btn-primary btn-hover btn-item"><span></span> Trends & <br>
+                          technology
+                          <i class="fa-solid fa-arrow-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="hero__about-text title-anim">
+                      <p>Think of the world's most iconica and successful brands easily findable, impactful.
+                        Interactional and exceptional designs. Our story takes beginning in 2013</p>
+                    </div>
+                    <div class="hero__about-award">
+                      <img src="assets/imgs/about/award.png" alt="Best Studio Award">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row hero__about-row">
+              <div class="col-xxl-12">
+                <div class="hero__about-video">
+                  <video loop muted autoplay playsinline>
+                    <source src="assets/video/about-1.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Hero area end -->
+
+
+        <!-- Story area start -->
+        <section class="story__area">
+          <div class="container g-0 line pt-140">
+            <span class="line-3"></span>
+            <div class="sec-title-wrapper">
+              <div class="from-text">from <span>2016</span></div>
+
+              <div class="row">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                  <h2 class="sec-sub-title title-anim">Scraft Studio</h2>
+                  <h3 class="sec-title title-anim">Our story</h3>
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                  <div class="story__text">
+                    <p><b>From a Spark to a Blaze</b>
+                      In 2015, Aarish Tinwala ignited a spark called Scraft Studios with a pocketful of dreams and
+                      limited resources.
+                      Through tireless dedication and a keen eye on the evolving digital landscape, that spark blossomed
+                      into a formidable
+                      flame.
+                    </p>
+                    <P><b>A Journey of Triumph</b>
+                      Over the span of 8 years, we've gone from a startup to a titan in the industry, steering over 100
+                      clients to success
+                      and generating a proud tally of over 50 Crores in profitable revenue.</P>
+                    <p>
+                      <b> Scraft Studios Today </b>
+                      Today, we stand as a beacon in the digital marketing sphere, transforming visions into victory
+                      narratives, ready to
+                      etch new success stories in the ever-evolving digital cosmos.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                  <div class="story__img-wrapper">
+                    <img src="assets/imgs/about/4/300 by 450.png" alt="Story Thumbnail" class="w-100">
+                  </div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                  <div class="story__img-wrapper img-anim">
+                    <img src="assets/imgs/about/4/520 by 700.png" alt="Story Thumbnail" data-speed="auto">
+                  </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+                  <div class="story__img-wrapper">
+                    <img src="assets/imgs/about/4/230 by 140.png" alt="Story Thumbnail">
+                    <img src="assets/imgs/about/4/410  by 330.png" alt="Story Thumbnail">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!-- Story area end -->
+
+
+        <!-- Counter area start -->
+        <section class="counter__area">
+          <div class="container g-0 line pb-140 pt-140">
+            <span class="line-3"></span>
+
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="counter__wrapper-2 counter_animation">
+                  <div class="counter__item-2 counter__anim">
+                    <h2 class="counter__number">1k</h2>
+                    <p>Project <br>completed</p>
+                    <span class="counter__border"></span>
+                  </div>
+                  <div class="counter__item-2 counter__anim">
+                    <h2 class="counter__number">832k</h2>
+                    <p>Happy <br>customers</p>
+                    <span class="counter__border"></span>
+                  </div>
+                  <div class="counter__item-2 counter__anim">
+                    <h2 class="counter__number">8+</h2>
+                    <p>Years <br>experiences</p>
+                    <span class="counter__border"></span>
+                  </div>
+                  <div class="counter__item-2 counter__anim">
+                    <h2 class="counter__number">48cr</h2>
+                    <p>Revenue <br>generatedx</p>
+                    <span class="counter__border"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Counter area end -->
+
+
+        <!-- Team area start -->
+        <section class="team__area pt-140 pb-140">
+          <div class="sec-title-wrapper">
+            <h2 class="sec-sub-title title-anim">Our Team</h2>
+            <h3 class="sec-title title-anim">How we work</h3>
+          </div>
+
+
+          <div class="swiper team__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide team__slide">
+                <a href=" ">
+                  <img src="assets/imgs/about/2/1.png" alt="Team Member">
+                  <div class="team__info">
+                    <h4 class="team__member-name">Aarish</h4>
+                    <h5 class="team__member-role">Founder</h5>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide team__slide">
+                <a href=" ">
+                  <img src="assets/imgs/about/2/2.png" alt="Team Member">
+                  <div class="team__info">
+                    <h4 class="team__member-name">Hammad</h4>
+                    <h5 class="team__member-role">Creative Visual Virtuosos</h5>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide team__slide">
+                <a href=" ">
+                  <img src="assets/imgs/about/2/3.png" alt="Team Member">
+                  <div class="team__info">
+                    <h4 class="team__member-name">Aniket</h4>
+                    <h5 class="team__member-role">Marketing Maestros</h5>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide team__slide">
+                <a href=" ">
+                  <img src="assets/imgs/about/2/4.png" alt="Team Member">
+                  <div class="team__info">
+                    <h4 class="team__member-name">Shubham</h4>
+                    <h5 class="team__member-role">Code Crusaders</h5>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide team__slide">
+                <a href=" ">
+                  <img src="assets/imgs/team/Muhammad_Nouman_Akbar.jpg" alt="Nouman Akbar, The Developer">
+                  <div class="team__info">
+                    <h4 class="team__member-name" title="Muhammad Nouman Akbar, The Developer">Nouman</h4>
+                    <h5 class="team__member-role" title="web Developer, E-commerce Developer">Code Enthusiast</h5>
+                  </div>
+                </a>
+              </div>
+
+              <!--<div class="swiper-slide team__slide">-->
+              <!--  <a href=" ">-->
+              <!--    <img src="assets/imgs/team/2.jpg" alt="Team Member">-->
+              <!--    <div class="team__info">-->
+              <!--      <h4 class="team__member-name">Saymon D. Halk</h4>-->
+              <!--      <h5 class="team__member-role">Researcher</h5>-->
+              <!--    </div>-->
+              <!--  </a>-->
+              <!--</div>-->
+            </div>
+          </div>
+        </section>
+        <!-- Team area end -->
+
+
+
+        <!-- Brand area start -->
+        <section class="brand__area">
+          <div class="container g-0 line pt-140 pb-140">
+            <span class="line-3"></span>
+            <div class="row g-0">
+              <div class="col-xxl-12">
+                <div class="sec-title-wrapper">
+                  <h2 class="sec-sub-title title-anim">Internation Brands</h2>
+                  <h3 class="sec-title title-anim">We are happy to work with global <br>
+                    largest brands</h3>
+                </div>
+              </div>
+
+              <div class="brand__list">
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/1.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/2.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/3.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/4.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/5.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/6.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/3.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/4.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/5.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/6.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/1.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item fade_bottom">
+                  <img src="assets/imgs/brand/2.png" alt="Brand Logo">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Brand area end -->
+
+
+        <!-- Testimonial area start -->
+        <section class="testimonial__area-2">
+          <div class="container g-0 line pb-140">
+            <span class="line-3"></span>
+
+            <div class="row g-0">
+              <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+                <div class="testimonial__video">
+                  <video autoplay muted loop>
+                    <source src="assets/video/testimonial.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+
+              <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+                <div class="testimonial__slider-wrapper-2">
+                  <div class="swiper testimonial__slider">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide testimonial__slide">
+                        <div class="testimonial__inner-2">
+                          <h2 class="testimonial__title-2">Crafting Your Digital Journey!</h2>
+                          <p class="testimonial__text-2">At Scraft Studio, we blend art and analytics to transform your
+                            vision into digital reality. From deep-diving into your brand's essence to launching
+                            data-driven campaigns, our team ensures every step is crafted for impact. We design,
+                            develop, and strategize, turning ideas into digital excellence. With ongoing optimization
+                            and your feedback, we keep your digital presence dynamic and successful Join us, and let's
+                            create digital magic together!</p>
+                          <!-- <h3 class="testimonial__author">Adam Syndera</h3>
+                          <h4 class="testimonial__role">CEO, Agency</h4> -->
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide testimonial__slide">
+                        <div class="testimonial__inner-2">
+                          <h2 class="testimonial__title-2">Amazing digital service</h2>
+                          <p class="testimonial__text-2">We were there right at the beginning just when the concept
+                            for
+                            search
+                            engine optimisation taking office and the full of internet. So wewe’ve grown to employ
+                            than 50
+                            talented specialists with diverse experiences and broad skill sets of huge markers.</p>
+                          <h3 class="testimonial__author">Adam Syndera</h3>
+                          <h4 class="testimonial__role">CEO, Agency</h4>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide testimonial__slide">
+                        <div class="testimonial__inner-2">
+                          <h2 class="testimonial__title-2">Amazing digital service</h2>
+                          <p class="testimonial__text-2">We were there right at the beginning just when the concept
+                            for
+                            search
+                            engine optimisation taking office and the full of internet. So wewe’ve grown to employ
+                            than 50
+                            talented specialists with diverse experiences and broad skill sets of huge markers.</p>
+                          <h3 class="testimonial__author">Adam Syndera</h3>
+                          <h4 class="testimonial__role">CEO, Agency</h4>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="testimonial__pagination">
+                    <div class="prev-button"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="next-button"><i class="fa-solid fa-arrow-left"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonial area end -->
+
+
+        <!-- CTA area start -->
+        <section class="cta__area">
+          <div class="container line pb-110 dark-p">
+            <div class="line-3"></div>
+            <div class="row">
+              <div class="col-xxl-12">
+                <div class="cta__content">
+                  <p class="cta__sub-title">Work with us</p>
+                  <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
+                  <div class="btn_wrapper">
+                    <a href="contact.html" class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
+                        class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CTA area end -->
+
+      </main>
+
+
+
+      <!-- Footer area start -->
+      <footer class="footer__area">
+        <div class="footer__top">
+          <div class="container footer-line"></div>
+          <img src="assets/imgs/feedback/design .png" alt="Footer Image" data-speed="0.75">
+        </div>
+
+        <div class="footer__btm">
+          <div class="container">
+            <div class="row footer__row">
+              <div class="col-xxl-12">
+                <div class="footer__inner">
+                  <div class="footer__widget">
+                    <div class="squid-game-characters">
+                      <div class="squid-character">
+                        <div class="squid-head">
+                          <div class="triangle"></div>
+                        </div>
+                        <div class="squid-body"></div>
+                        <div class="squid-legs">
+                          <div class="squid-leg"></div>
+                          <div class="squid-leg"></div>
+                        </div>
+                      </div>
+                      <div class="squid-character">
+                        <div class="squid-head">
+                          <div class="square"></div>
+                        </div>
+                        <div class="squid-body"></div>
+                        <div class="squid-legs">
+                          <div class="squid-leg"></div>
+                          <div class="squid-leg"></div>
+                        </div>
+                      </div>
+                      <div class="squid-character">
+                        <div class="squid-head">
+                          <div class="circle"></div>
+                        </div>
+                        <div class="squid-body"></div>
+                        <div class="squid-legs">
+                          <div class="squid-leg"></div>
+                          <div class="squid-leg"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="squid-game-quote">
+                      <p>Marketing shouldn't feel like a deadly game of chance. Partner with us, and let's ensure your only 'elimination' is the competition.</p>
+                    </div>
+                    <ul class="footer__social">
+                      <li><a href="https://www.facebook.com/scraftstudio"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+                      <li><a href="https://www.behance.net/scraftstudio"><span><i class="fa-brands fa-square-behance"></i></span></a></li>
+                      <li><a href="https://www.linkedin.com/company/scraftstudio/?originalSubdomain=in"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                      <!--<li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>-->
+                    </ul>
+                  </div>
+
+                  <div class="footer__widget-2">
+                    <h2 class="footer__widget-title">Quick Links</h2>
+                    <ul class="footer__link">
+                      <li><a href="about.html">About</a></li>
+                      <!--<li><a href="portfolio.html">Case Study</a></li>-->
+                      <li><a href="career.html">Services</a></li>
+                      <!--<li><a href="blog.html"></a></li>-->
+                      <li><a href="cancellation-policy.html">Cancellation Policy</a></li>
+                      <li><a href="refund-policy.html">Refund Policy</a></li>
+                      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                      <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer__widget-3">
+                    <h2 class="footer__widget-title">Contact Us</h2>
+                    <ul class="footer__contact">
+                      <li>Sadbhav Complex, 1st floor, Drive In Rd, Ahmedabad, Gujarat 380059</li>
+                      <li><a href="tel:02574328301" class="phone">+(91)-869-8208-442 </a></li>
+                      <li><a href="mailto:hello@scraft.studio">hello@scraft.studio</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer__widget-4">
+                    <h2 class="project-title">Have a project in your mind?</h2>
+                    <div class="btn_wrapper">
+                      <a href="contact.html" class="wc-btn-primary btn-hover btn-item"><span></span> contact us <i
+                          class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                  </div>
+
+                  <div class="footer__copyright">
+                    <p>© 2024 Next Up Design | Scraft Studio<a href="https://scraft.studio/" target="_blank"></a>
+                    </p>
+                  </div>
+
+                  <div class="footer__subscribe">
+                    <form action="#">
+                      <input type="email" name="email" placeholder="Enter your email">
+                      <button type="submit" class="subs-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer area end -->
+
+
+    </div>
+  </div>
+
+
+  <!-- All JS files -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/chroma.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/vanilla-tilt.js"></script>
+  <script src="assets/js/jquery.meanmenu.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

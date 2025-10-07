@@ -1,0 +1,15 @@
+/* Ensure body background doesn't interfere with tunnel effect */
+body {
+    background-color: #000000;
+}
+
+/* Make sure the main wrapper is transparent */
+#smooth-wrapper,
+#smooth-content {
+    background-color: transparent;
+}
+
+/* Ensure the main content area doesn't have a background */
+main {
+    background-color: transparent;
+}

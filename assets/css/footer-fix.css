@@ -1,0 +1,24 @@
+/* Footer copyright fix */
+.footer__copyright {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer__copyright p {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.footer__copyright p a {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .footer__copyright p {
+        font-size: 12px;
+    }
+}

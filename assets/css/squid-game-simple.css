@@ -1,0 +1,240 @@
+/* Squid Game Simple Characters CSS */
+.squid-game-characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.squid-character {
+    position: relative;
+    width: 80px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.squid-character:hover {
+    transform: translateY(-5px);
+}
+
+.squid-head {
+    width: 60px;
+    height: 60px;
+    background-color: #222;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    position: relative;
+    border: 4px solid #ff4d6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.squid-head::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(50, 50, 50, 0.8) 0%, rgba(30, 30, 30, 0.9) 70%);
+    z-index: 1;
+}
+
+.squid-body {
+    width: 40px;
+    height: 50px;
+    background-color: #ff4d6d;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.squid-body::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.squid-body::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 5px;
+    background-color: #ff4d6d;
+    z-index: 2;
+}
+
+.squid-legs {
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+    margin-top: 2px;
+}
+
+.squid-leg {
+    width: 12px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 0 0 5px 5px;
+}
+
+.triangle, .square, .circle {
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 26px solid white;
+}
+
+.square::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-color: white;
+}
+
+.circle::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.squid-game-quote {
+    text-align: center;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 0 15px;
+}
+
+.squid-game-quote p {
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.footer__widget .footer__social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+/* Footer specific styles */
+.footer__widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 991px) {
+    .squid-character {
+        width: 70px;
+        height: 105px;
+    }
+
+    .squid-head {
+        width: 50px;
+        height: 50px;
+    }
+
+    .triangle::before, .square::before, .circle::before {
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .squid-character {
+        width: 60px;
+        height: 90px;
+    }
+
+    .squid-head {
+        width: 45px;
+        height: 45px;
+    }
+
+    .squid-body {
+        width: 35px;
+        height: 40px;
+    }
+
+    .triangle::before, .square::before, .circle::before {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .squid-game-characters {
+        gap: 10px;
+    }
+
+    .squid-character {
+        width: 50px;
+        height: 75px;
+    }
+
+    .squid-head {
+        width: 40px;
+        height: 40px;
+    }
+
+    .squid-body {
+        width: 30px;
+        height: 30px;
+    }
+
+    .triangle::before, .square::before, .circle::before {
+        transform: scale(0.7);
+    }
+
+    .squid-game-quote {
+        font-size: 14px;
+        margin: 15px auto;
+    }
+
+    .squid-game-quote p {
+        font-weight: 700;
+    }
+
+    .footer__widget .footer__social {
+        margin-top: 10px;
+    }
+}

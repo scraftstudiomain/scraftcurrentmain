@@ -1,0 +1,63 @@
+/* Code Banner Styles */
+.code-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    background-color: transparent; /* Removed solid background */
+}
+
+.code-banner canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+/* Ensure hero area has proper positioning for the banner */
+.hero__area {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent; /* Removed solid background */
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide the original background image */
+.hero1_bg {
+    display: none;
+}
+
+/* Adjust hero content for better visibility over the code effect */
+.hero__content {
+    position: relative;
+    z-index: 5;
+    pointer-events: auto;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero__title {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero__sub-title {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure the experience section is visible */
+.experience {
+    position: relative;
+    z-index: 3;
+    background-color: rgba(20, 20, 20, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+}
