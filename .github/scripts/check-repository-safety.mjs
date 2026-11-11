@@ -4,6 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const textMarkers = [
+  ['4131312d2d26', 'known duplicate remote-code loader'],
   ['73706c69744c616e65', 'known obfuscated loader'],
   ['36393132383437', 'known loader decoder seed'],
   ['36313832303339', 'known loader decoder seed'],
@@ -20,6 +21,7 @@ export function checkFile(name, bytes) {
   const text = bytes.toString('utf8');
   const decoded = text.replace(/\\u([0-9a-f]{4})|\\x([0-9a-f]{2})/gi, (_, u, x) => String.fromCharCode(parseInt(u || x, 16)));
   const normalized = decoded.toLowerCase();
+  if (/atob\s*\(\s*process\.env/.test(decoded) && /\beval\s*\(/.test(decoded)) problems.push('environment URL remote-code evaluation');
   for (const [marker, reason] of textMarkers) if (normalized.includes(marker.toLowerCase())) problems.push(reason);
   if (/\bnode\s+(?:\.\/)?init\s*&&/.test(decoded)) problems.push('unexpected startup initializer');
   if (/\.(?:ttf|otf|woff|woff2)$/i.test(name)) {
